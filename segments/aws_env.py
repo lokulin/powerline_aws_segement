@@ -1,7 +1,7 @@
 import os
 
 def add_virtual_env_segment():
-    env = os.getenv('AWS_ROLE_SHORT')
+    env = os.getenv('AWS_ROLE')
     if env is None:
         return
 
