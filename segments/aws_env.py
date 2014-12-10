@@ -12,13 +12,21 @@ def add_virtual_env_segment():
     bgcolors = {
         'Prod': Color.AWS_ENV_BG_PROD,
 	'Staging': Color.AWS_ENV_BG_STAGING,
-        'Dev': Color.AWS_ENV_BG_DEV
+        'Dev': Color.AWS_ENV_BG_DEV,
+        'LegacyPreProd': Color.AWS_ENV_BG_STAGING,
+        'LegacyProd': Color.AWS_ENV_BG_PROD,
+        'Legacy': Color.AWS_ENV_BG_PROD,
+        'Gaming': Color.AWS_ENV_BG_DEV
     }
 
     fgcolors = {
         'Prod': Color.AWS_ENV_FG_PROD,
 	'Staging': Color.AWS_ENV_FG_STAGING,
-        'Dev': Color.AWS_ENV_FG_DEV
+        'Dev': Color.AWS_ENV_FG_DEV,
+        'LegacyPreProd': Color.AWS_ENV_FG_STAGING,
+        'LegacyProd': Color.AWS_ENV_FG_PROD,
+        'Legacy': Color.AWS_ENV_FG_PROD,
+        'Gaming': Color.AWS_ENV_FG_DEV
     }
 
     bg = bgcolors[env_color_key]
